@@ -1,0 +1,27 @@
+<!-- filtro -->
+
+<form action="list_prof.php" method="GET">
+    <fieldset>
+        <legend>Busca</legend>
+        <label for="busca">Busca</label>
+        <input type="text" name="busca">
+        <label for="tipo">Tipo</label>
+        <select name="tipo" id="">
+            <option value="1">ID</option>
+            <option value="2">Formação</option>
+        </select>
+        <button type="submit">Buscar</button>
+    </fieldset>
+</form>
+
+<h1>Listagem de Professores</h1>
+<table border="1">
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Cpf</th>
+    <th>Rg</th>
+    <th>Idade</th>
+    <th>Formação</th>
+    <th>Anexo</th>
+    {itens}
+</table>

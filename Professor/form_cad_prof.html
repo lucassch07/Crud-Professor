@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manutenção de Atividades</title>
+</head>
+<body>
+    <h1>Cadastro de Professor</h1>
+    <fieldset>
+    <legend>Formulário</legend>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <label for="id">Id:</label>
+        <input type="text" name="id" id="id" readonly value={id}>
+
+        <br>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value={nome}>
+
+        <br>
+
+        <label for="cpf">Cpf:</label>
+        <input type="text" name="cpf" id="cpf" value={cpf}>
+
+        <br>
+
+        <label for="rg">Rg:</label>
+        <input type="text" name="rg" id="rg" value={rg}>
+
+        <br>
+        
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade" id="idade" value={idade}>
+
+        <br>
+
+        <label for="formacao">Formação:</label>
+        <input type="text" name="formacao" id="formacao" value={formacao}>
+
+        <br>
+        
+        <label for="foto_sua">Foto:</label>
+        <input type="file" name="foto_sua" id="foto_sua" value={foto_sua}>
+
+        <br>
+
+        <button type="submit" name="acao" value="salvar">Salvar</button>
+        <button type="submit" name="acao" value="excluir">Excluir</button>
+        <button type="reset" name="acao" value="cancel">Cancelar</button>
+    </form>
+    </fieldset>
+    <br><br>
+</body>
+</html>
