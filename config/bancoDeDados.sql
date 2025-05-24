@@ -9,7 +9,6 @@ create table professor(
     rg varchar(250),
     idade int,
     formacao varchar(250),
-    foto_identidade varchar(250),
     foto_sua varchar(250)
 );
 
