@@ -1,4 +1,7 @@
 <?php
+    require_once("../Classes/Professor.class.php");
+
+
     $busca = isset($_GET['busca'])?$_GET['busca']:0; 
     $tipo = isset($_GET['tipo'])?$_GET['tipo']:0;
  
@@ -21,6 +24,6 @@
 
     $listagem = file_get_contents('listagem_prof.html');
     $listagem = str_replace('{itens}', $itens, $listagem);
-    print $listagem;
+    print ($listagem);
 
 ?>
