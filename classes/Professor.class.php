@@ -150,7 +150,7 @@
       //$resultado = $comando ->fetchAll();
       $professores = [];
       while ($registro = $comando->fetch()){
-        $professor = new Professor($registro['id'], $registro['descricao'], $registro['peso'], $registro['anexo']);
+        $professor = new Professor($registro['id'], $registro['nome'], $registro['cpf'], $registro['rg'], $registro['idade'], $registro['formacao'], $registro['foto_sua']);
         array_push($professores, $professor);
       }
       return $professores;
