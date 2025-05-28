@@ -16,7 +16,7 @@
         $destino_anexo = 'uploads/'.$_FILES['foto_sua']['name'];
 
 
-        move_uploaded_file($_FILES['foto_sua']['tmp_name'], '../'.$destino_anexo);
+        move_uploaded_file($_FILES['foto_sua']['tmp_name'], PATH.UPLOAD.$destino_anexo);
         $professor = new Professor($id, $nome, $cpf, $rg, $idade, $formacao, $destino_anexo);
 
         if($acao == "salvar"){
