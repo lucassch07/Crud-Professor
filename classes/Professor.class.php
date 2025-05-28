@@ -138,6 +138,7 @@
         switch($tipo){
           case 1: $sql .= " WHERE id = :info ORDER BY id"; break; // filtro por id
           case 2: $sql .= " WHERE formacao like :info ORDER BY formacao"; $info = '%'.$info.'%'; break; // filtro por descrição
+          case 3: $sql .= " WHERE nome like :info ORDER BY nome"; $info = '%'.$info.'%'; break;
         }
       }
 
